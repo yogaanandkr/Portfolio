@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:wght@400;500;700&display=swap');
 
-
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 .navbar{
     height: 10vh;
     width: 100%;
     /* background-color: crimson; */
     font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
     /* display: flex; */
     /* justify-content: space-around; */
     /* justify-content: space-between; */
@@ -60,8 +63,27 @@
     color: #fff;
 }
 
+.navbar.sticky{
+    background-color: rgba(220, 20, 60, 0.747);
+    transition:  0.9s ;
+}
+
+.navbar.sticky .navbar-brand  {
+    color: black;
+    transition:  0.9s ;
+}
+
+.navbar.sticky .navbar-brand span{
+    color: #fff;
+    transition:  0.9s ;
+}
+
+.navbar.sticky ul li a:hover{
+    color: black;
+}
+
 .home{
-    background: url('images/banner.jpg') no-repeat ;
+    background: url('banner.jpg') no-repeat ;
     background-size: cover;
     height: 100vh;
     padding: 0 200px ;
@@ -95,23 +117,22 @@
     color: crimson;
 }
 
-.navbar.sticky{
-    background-color: rgba(220, 20, 60, 0.747);
-    transition:  0.9s ;
-}
-
-.navbar.sticky .navbar-brand  {
-    color: black;
-    transition:  0.9s ;
-}
-
-.navbar.sticky .navbar-brand span{
+.home .home-content button{
+    display: inline-block;
+    background: crimson;
     color: #fff;
-    transition:  0.9s ;
+    font-size: 25px;
+    padding: 12px 26px;
+    margin-top: 20px;
+    /* margin: 0 auto; */
+    border-radius: 6px;
+    border: 2px solid crimson;
 }
 
-.navbar.sticky ul li a:hover{
-    color: black;
+.home .home-content button:hover{
+    color: crimson;
+    background: none;
+    transition: all 0.5s ease;
 }
 
 @media (max-width: 991px){
@@ -120,8 +141,9 @@
     }
     .navbar ul{
         height:100vh;
-        width:100%;
+        width:100vw;
         background-color: rgb(0, 0, 0);
+        background-size: cover;
     }
     .navbar li{
         margin: 0 auto;
@@ -129,3 +151,244 @@
     }
 }
 
+
+@media (max-width: 550px){
+    .home{
+        padding: 0 150px;
+        text-align: center;
+    }
+    .home-content .text-1{
+        font-size: 20px;
+    }
+    .home-content .text-2{
+        font-size: 40px;
+        /* margin-left: -60px; */
+    }
+    .home-content .text-3{
+        font-size: 25px;
+    }
+    .home-content .text-3 span{
+        font-size: 50px;
+        /* margin-left: -20px; */
+    }
+
+}
+
+
+
+
+                                /* about section  */
+
+.about{
+    margin: 100px 0 0 0 ;
+}
+
+.about .aboutme{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* .about .aboutme::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 32%;
+    height: 3px;
+    width: 183px;
+    background: #111;
+}
+
+.about .aboutme::after{
+    content: "Who I am";
+    font-size: 24px;
+    position: absolute;
+    bottom: -10px;
+    padding: 5px;
+    left: 50%;
+    background: #fff;
+    font-size: 20px;
+    color: crimson;
+    transform: translateX(-50%);
+} */
+
+
+
+.who{
+    text-align: center;
+}
+
+.who span{
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content{
+    padding: 50px 0;
+}
+
+.aboutimg{
+    height: 35vh;
+    border-radius: 10%;
+    width: 70%;
+}
+
+.content .heading span{
+    color: crimson;
+    font-weight: 800;
+}
+
+.content .para{
+    font-size: 18px;
+}
+
+.content .resume{
+    margin-left: 50%;
+    /* margin: 0 auto; */
+    background-color: crimson;
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid crimson;
+}
+
+.content .resume:hover{
+    background-color: #fff;
+    color: crimson;
+    transition: all 0.3s ease-out;
+}
+
+
+@media (max-width: 768px){
+    .aboutimg{
+        height: 40vh;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin: 20px 25% ;
+        border-radius: 10%;
+        width: 50vw;
+    }
+
+    .content .resume{
+        margin-left: 30%;
+        /* margin: 0 auto; */
+        background-color: crimson;
+        color: #fff;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 2px solid crimson;
+    }
+}
+
+
+                                            /* skills  */
+.skills{
+    margin: 100px 0 0 0 ;
+    background-color: rgba(250, 235, 215, 0.678);
+}
+
+.skills .aboutme{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.who{
+    text-align: center;
+}
+
+.who span{
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* .skills .skill-content .col{
+    width: calc(50% - 30px);
+} */
+
+.skill-content{
+    margin-top: 3%;
+}
+
+.skills .skill-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-content p{
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: #111;
+}
+
+.skill-content p span{
+    color: crimson;
+}
+
+.skills .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skill-content .right .bars .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .right{
+    /* margin-top: 10%; */
+}
+
+.skills .right span{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(250, 235, 215, 0.678);
+}
+
+.skills .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.skills .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    /* width: 80%; */
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skill-content .right .html::before{
+    width: 90%;
+}
+.skill-content .right .css::before{
+    width: 80%;
+}
+.skill-content .right .bootstrap::before{
+    width: 75%;
+}
+.skill-content .right .javascript::before{
+    width: 80%;
+}
+.skill-content .right .mongodb::before{
+    width: 85%;
+}
+.skill-content .right .nodejs::before{
+    width: 60%;
+}
