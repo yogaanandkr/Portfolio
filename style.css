@@ -154,7 +154,7 @@ body{
 
 @media (max-width: 550px){
     .home{
-        padding: 0 150px;
+        padding: 0 30px;
         text-align: center;
     }
     .home-content .text-1{
@@ -391,4 +391,28 @@ body{
 }
 .skill-content .right .nodejs::before{
     width: 60%;
+}
+
+                /* project section  */
+
+.projects{
+    margin: 100px 0 0 0 ;
+}
+
+.projects .myprojects{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main{
+    /* margin-left: 500px; */
+}
+
+.main .all-projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
