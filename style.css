@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
 }
 .navbar{
     height: 10vh;
@@ -152,7 +153,7 @@ body{
 }
 
 
-@media (max-width: 550px){
+@media (max-width: 776px){
     .home{
         padding: 0 30px;
         text-align: center;
@@ -182,6 +183,10 @@ body{
 .about{
     margin: 100px 0 0 0 ;
 }
+.content .row{
+    display: flex;
+    justify-content: space-between;
+}
 
 .about .aboutme{
     position: relative;
@@ -191,31 +196,6 @@ body{
     margin-bottom: 0;
     font-family: 'Ubuntu', sans-serif;
 }
-
-/* .about .aboutme::before{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 32%;
-    height: 3px;
-    width: 183px;
-    background: #111;
-}
-
-.about .aboutme::after{
-    content: "Who I am";
-    font-size: 24px;
-    position: absolute;
-    bottom: -10px;
-    padding: 5px;
-    left: 50%;
-    background: #fff;
-    font-size: 20px;
-    color: crimson;
-    transform: translateX(-50%);
-} */
-
-
 
 .who{
     text-align: center;
@@ -229,6 +209,12 @@ body{
 .content{
     padding: 50px 0;
 }
+
+.about .container{
+    text-align: center;
+    margin-left: 15%;
+}
+
 
 .aboutimg{
     height: 35vh;
@@ -246,7 +232,7 @@ body{
 }
 
 .content .resume{
-    margin-left: 50%;
+    /* margin-left: 8%; */
     /* margin: 0 auto; */
     background-color: crimson;
     color: #fff;
@@ -277,9 +263,12 @@ body{
         border-radius: 10%;
         width: 50vw;
     }
-
+    .about .container{
+        text-align: center;
+        margin-left: 0;
+    }
     .content .resume{
-        margin-left: 30%;
+        /* margin-left: 30%; */
         /* margin: 0 auto; */
         background-color: crimson;
         color: #fff;
@@ -294,7 +283,7 @@ body{
 
                                             /* skills  */
 .skills{
-    margin: 100px 0 0 0 ;
+    /* margin: 100px 0 0 0 ; */
     background-color: rgba(250, 235, 215, 0.678);
 }
 
@@ -313,6 +302,7 @@ body{
 
 .who span{
     color: crimson;
+    font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -400,8 +390,8 @@ body{
                 /* project section  */
 
 .projects{
-    margin: 100px 0 0 0 ;
-    height: 100vh;
+    /* margin: 100px 0 0 0 ; */
+    height: 90vh;
 }
 
 .projects .myprojects{
@@ -512,16 +502,17 @@ body{
 
     .carousel img{
         height:300px;
-        width:fit-content;
+        width:100%;
         border-radius: 10px;
     }
 }
 
 @media (max-width:760px){
     .carousel{
-        margin-top: 200px;
+        margin-top: 100px;
     }
 }
+
 
 
 /* .main .all-projects a{
@@ -545,3 +536,78 @@ body{
         display: block;
     }
 } */
+
+
+
+                /* contact section  */
+.contact .aboutme{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.contact .home-content{
+    margin-bottom: 50px;
+}
+
+.contact{
+    background-color: rgba(220, 20, 60, 0.116);
+    margin-top: 50px;
+}
+
+.contact .logo{
+    height: 50px;
+    width: 50px;
+}
+
+.contact .con{
+    margin-bottom: 20px;
+}
+
+.contact .svg{
+    height: 100px;
+    width: 50px;
+}
+
+.contact-logo{
+    height: 50px;
+    width: 50px;
+    color: aqua;
+}
+
+.add{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.add span{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+    color: crimson;
+}
+
+.add span{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.con{
+    display: flex;
+    /* margin-top: 50px; */
+}
+
+.con span{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.con span a{
+    color: crimson;
+}
+
+.contact .container{
+    margin-top: 100px;
+}
+
+
