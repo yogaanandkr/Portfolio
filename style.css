@@ -20,7 +20,7 @@ body{
 
 .navbar ul li a{
     color: #fff;
-    margin-left: 100px;
+    /* margin-left: 100px;............. */
     font-size: 20px;
     font-weight: 900;
 }
@@ -35,7 +35,7 @@ body{
     font-weight: 700;
     color: #fff;
     margin: 0 auto;
-    margin-left: 100px;
+    /* margin-left: 100px;.......... */
 }
 
 .navbar-brand span{
@@ -259,7 +259,7 @@ body{
         height: 40vh;
         margin-bottom: 20px;
         border-radius: 10px;
-        margin: 20px 25% ;
+        /* margin: 20px 25% ; */
         border-radius: 10%;
         width: 50vw;
     }
@@ -496,7 +496,7 @@ body{
 @media (max-width: 800px){
     .carousel{
         margin-top: 50px;
-        height: 50%;
+        height: 30%;
         width: 100%;
     }
 
@@ -610,4 +610,11 @@ body{
     margin-top: 100px;
 }
 
+
+@media (max-width:570px){
+    .add span{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
 
