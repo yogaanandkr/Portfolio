@@ -517,6 +517,12 @@ body{
     }
 }
 
+@media (max-width:760px){
+    .carousel{
+        margin-top: 200px;
+    }
+}
+
 
 /* .main .all-projects a{
     font-size: 20px;
