@@ -19,6 +19,10 @@ body{
 
 }
 
+.navbar ul{
+    margin-left: 150px;
+}
+
 .navbar ul li a{
     color: #fff;
     margin-left: 100px;
@@ -91,6 +95,7 @@ body{
     .navbar ul{
         /* padding: 100px; */
         text-align: center;
+        margin-left: 0;
         /* height:fit-content; */
         /* width:100vw; */
         background-color: rgba(0, 0, 0, 0.671);
@@ -113,7 +118,7 @@ body{
 }
 
 .home{
-    background: url('banner.jpg') no-repeat ;
+    background: url('Picsart_22-03-28_00-59-04-188.jpg') no-repeat ;
     background-size: cover;
     height: 100vh;
     padding: 0 200px ;
@@ -637,8 +642,16 @@ body{
     }
 }
 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 30px;
+}
+
 html, body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
