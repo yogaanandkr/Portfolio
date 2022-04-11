@@ -21,6 +21,10 @@ body {
   font-family: "Pacifico", cursive;
 }
 
+section .who {
+  font-family: "Pacifico", cursive;
+}
+
 .navbar {
   height: 10vh;
   width: 100%;
@@ -238,6 +242,7 @@ body {
 .about {
   margin: 100px 0 0 0;
   text-align: center;
+  background-color: rgba(220, 20, 60, 0.116);
 }
 .content .row {
   display: flex;
@@ -258,7 +263,7 @@ body {
 
 .who span {
   color: crimson;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
 }
 
 .content {
@@ -354,7 +359,7 @@ body {
 .who span {
   color: crimson;
   font-weight: 500;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
 }
 
 /* .skills .skill-content .col{

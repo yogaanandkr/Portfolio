@@ -10,6 +10,20 @@ window.addEventListener("mouseover", function () {
   card.classList.toggle("shadow");
 });
 
+// typing animation script
+var typed = new Typed(".typing", {
+  strings: ["Student.", "Developer."],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+});
+var typeds = new Typed(".typing-2", {
+  strings: ["Student.", "Developer."],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+});
+
 // window.addEventListener('scroll', function(){
 //     const scroll = this.document.querySelector('.scroll-up-btn')
 //     nava.classList.toggle('scroll-none', window.scrollY > 10)
