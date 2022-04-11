@@ -146,7 +146,7 @@ section .who {
   background-size: cover;
   height: 100vh;
   padding: 0 200px;
-  display: flex;
+  display: grid;
   /* justify-content: center; */
   align-items: center;
   color: #fff;
