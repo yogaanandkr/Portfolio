@@ -242,6 +242,7 @@ section .who {
 .aboutimg {
   height: 35vh;
   border-radius: 10%;
+  /* margin-left: 500px; */
 }
 
 .content .heading span {
