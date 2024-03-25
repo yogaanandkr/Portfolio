@@ -124,7 +124,9 @@ section .who {
 }
 
 .home {
-  background: url("Picsart_22-04-09_14-14-04-138.jpg") no-repeat;
+  background: url("./bg.jpg");
+  /* opacity: 0.5; */
+  background-position: 450px -50px;
   background-size: cover;
   height: 100vh;
   padding: 0 200px;
@@ -203,6 +205,10 @@ section .who {
 
 .about {
   margin: 100px 0 0 0;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(220, 20, 60, 0.116);
 }
 .content .row {
@@ -306,6 +312,10 @@ section .who {
 /* skills  */
 .skills {
   background-color: rgba(250, 235, 215, 0.678);
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .who {
@@ -394,11 +404,14 @@ section .who {
 .project {
   background-color: #111;
   text-align: center;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project .card {
   background-color: #111;
-  height: fit-content;
+  height: 300px;
   border-radius: 10px;
   border: 2px solid crimson;
   word-break: break-all;
@@ -410,6 +423,7 @@ section .who {
 
 .project img {
   border-radius: 10px;
+  height: 100%;
 }
 
 .project a {
@@ -528,4 +542,8 @@ footer {
   font-size: 20px;
   padding: 10px;
   text-align: center;
+}
+
+.card a {
+  font-size: 20px;
 }

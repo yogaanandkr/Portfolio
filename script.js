@@ -24,155 +24,66 @@ var typeds = new Typed(".typing-2", {
   loop: true,
 });
 
-// window.addEventListener('scroll', function(){
-//     const scroll = this.document.querySelector('.scroll-up-btn')
-//     nava.classList.toggle('scroll-none', window.scrollY > 10)
-// })
+let carousel = [
+  {
+    name: "Gaming Charecter Interface",
+    img: "Screenshot (240).png",
+    link: "https://yogaanandkr.github.io/valorant/",
+  },
+  {
+    name: "Meusium of candy",
+    img: "Screenshot (239).png",
+    link: "https://yogaanandkr.github.io/Museum_of_candy/",
+  },
+  {
+    name: "Shopping app page login",
+    img: "Screenshot (209).png",
+    link: "https://yogaanandkr.github.io/bootstrap-1/",
+  },
+  {
+    name: "Shaadi.com replica",
+    img: "shaadi.png",
+    link: "https://yogaanandkr.github.io/Shaadi_replica/",
+  },
+  {
+    name: "Manes Winchester",
+    img: "manes.png",
+    link: "https://yogaanandkr.github.io/manes_winchester_replica/",
+  },
+  {
+    name: "Calculator",
+    img: "Screenshot (241).png",
+    link: "https://yogaanandkr.github.io/calculator_js/",
+  },
+  {
+    name: "Query page",
+    img: "Screenshot (207).png",
+    link: "https://yogaanandkr.github.io/questions/",
+  },
+  {
+    name: "Menu",
+    img: "Screenshot (208).png",
+    link: "https://yogaanandkr.github.io/Menu/",
+  },
+  {
+    name: "Score Keeper",
+    img: "Screenshot (243).png",
+    link: "https://yogaanandkr.github.io/scoreKeeper/",
+  },
+];
 
-// .projects {
-//   /* margin: 100px 0 0 0 ; */
-//   height: 90vh;
-// }
-
-// .projects .myprojects {
-//   position: relative;
-//   font-size: 40px;
-//   text-align: center;
-//   font-weight: 500;
-//   margin-bottom: 0;
-//   color: #fff;
-//   font-family: "Ubuntu", sans-serif;
-// }
-
-// .projects .who {
-//   color: #fff;
-// }
-
-// /* carousel projects  */
-// /* .projects .carousel .card{
-//     background: #222;
-//     border-radius: 6px;
-//     padding: 25px 35px;
-// }
-
-// .projects .carousel .card img{
-//     height: 250px;
-//     width: 250px;
-//     object-fit: cover;
-//     border-radius: 10px;
-//     border: 5px solid crimson;
-// } */
-
-// .carousel {
-//   margin-top: 100px;
-//   height: 50%;
-//   width: 50%;
-// }
-
-// .carousel img {
-//   height: 500px;
-//   width: 100%;
-//   border-radius: 10px;
-// }
-
-// .projects .home-content {
-//   margin: 50px 0;
-//   color: #fff;
-// }
-
-// .projects {
-//   background: #111;
-// }
-
-// .carousel-item h3 {
-//   color: crimson;
-//   font-weight: 600;
-//   /* background-color: #111; */
-//   border-radius: 10px;
-// }
-
-// .carousel-caption {
-//   background-color: rgba(220, 20, 60, 0.342);
-//   border-radius: 10px;
-// }
-
-// .carousel-item h3 a {
-//   /* color: crimson; */
-//   color: #fff;
-//   font-weight: 600;
-//   /* background-color: #111; */
-//   border-radius: 10px;
-// }
-
-// .carousel-item h3 a:hover {
-//   color: crimson;
-//   text-decoration: none;
-//   transition: 0.3s;
-// }
-
-// .carousel-item p {
-//   color: #fff;
-//   font-weight: 500;
-// }
-
-// .carousel-control-prev {
-//   background-color: #111;
-// }
-
-// .carousel-control-next {
-//   background-color: #111;
-// }
-
-// .carousel-item button {
-//   background: crimson;
-//   border: 3px solid crimson;
-//   border-radius: 10px;
-// }
-
-// .carousel-item button a {
-//   color: #fff;
-//   font-size: 20px;
-//   font-weight: 500;
-// }
-
-// @media (max-width: 800px) {
-//   .carousel {
-//     margin-top: 50px;
-//     height: 30%;
-//     width: 100%;
-//   }
-
-//   .carousel img {
-//     height: 300px;
-//     width: 100%;
-//     border-radius: 10px;
-//   }
-// }
-
-// @media (max-width: 760px) {
-//   .carousel {
-//     margin-top: 100px;
-//   }
-// }
-
-// /* .main .all-projects a{
-//     font-size: 20px;
-//     color: #111;
-//     font-weight: 500;
-// }
-
-// .main .all-projects a:hover{
-//     color: crimson;
-// }
-
-// .main .all-projects{
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     padding-left: 20%;
-// }
-
-// @media (max-width: 1000px){
-//     .main .all-projects{
-//         display: block;
-//     }
-// } */
+let carousels = document.querySelector(".carousel");
+carousel.map(a => {
+  carousels.innerHTML += `
+                          <div class="item mb-4">
+                              <div class="card">
+                                <img src="${a.img}" alt="" class="card-img-top">
+                                <div class="card-body">
+                                  <a href=${a.link} target="new"
+                                    >${a.name}</a>
+                                </h3>
+                                </div>
+                              </div>
+                          </div>
+                         `;
+});
