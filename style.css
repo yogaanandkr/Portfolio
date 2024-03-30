@@ -622,3 +622,30 @@ footer {
 .contact .container .row {
   /* margin-left: 200px; */
 }
+
+.skillsanother {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skillanother {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* .stardiv {
+  font-size: 100px;
+} */
+
+.skillanother .star {
+  color: goldenrod;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.skillanother span {
+}
