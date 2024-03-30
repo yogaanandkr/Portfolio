@@ -99,11 +99,13 @@ section .who {
   .navbar-brand {
     margin-left: 0px;
   }
+
   .navbar ul {
     text-align: center;
     margin-left: 0;
     background-color: rgba(0, 0, 0, 0.671);
   }
+
   .navbar li {
     margin-right: 100px;
   }
@@ -177,6 +179,7 @@ section .who {
   background-color: transparent;
   transition: all 0.5s ease;
 }
+
 .home-content button:hover a {
   color: crimson;
   transition: all 0.5s ease;
@@ -187,15 +190,19 @@ section .who {
     padding: 0 30px;
     text-align: center;
   }
+
   .home-content .text-1 {
     font-size: 20px;
   }
+
   .home-content .text-2 {
     font-size: 40px;
   }
+
   .home-content .text-3 {
     font-size: 25px;
   }
+
   .home-content .text-3 span {
     font-size: 40px;
   }
@@ -205,12 +212,15 @@ section .who {
 
 .about {
   margin: 100px 0 0 0;
-  height: 800px;
+  padding-top: 50px;
+  /* height: 800px; */
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(220, 20, 60, 0.116);
 }
+
 .content .row {
   display: flex;
   justify-content: space-between;
@@ -218,7 +228,7 @@ section .who {
 
 .about .text {
   font-size: 30px;
-  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .who {
@@ -246,9 +256,17 @@ section .who {
 }
 
 .aboutimg {
-  height: 35vh;
-  border-radius: 10%;
+  /* height: 35vh; */
+  height: 40vh;
+  width: 70%;
+  border-radius: 100%;
+  border: 10px solid rgba(220, 20, 60, 0.747);
+  transition: border 0.5s;
   /* margin-left: 500px; */
+}
+
+.aboutimg:hover {
+  border: 10px solid white;
 }
 
 .content .heading span {
@@ -258,6 +276,10 @@ section .who {
 
 .content .para {
   font-size: 18px;
+  text-align: justify;
+  /* font-size: 25px; */
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .resume {
@@ -278,6 +300,7 @@ section .who {
 .resume:hover {
   background-color: #fff;
 }
+
 .resume:hover a {
   color: crimson;
 }
@@ -290,14 +313,15 @@ section .who {
   .aboutimg {
     height: 35vh;
     margin-bottom: 20px;
-    border-radius: 10px;
-    border-radius: 10%;
-    width: 100vw;
+    border-radius: 100%;
+    width: 50vw;
   }
+
   .about .container {
     text-align: center;
     margin-left: 0;
   }
+
   .content .resume {
     background-color: crimson;
     color: #fff;
@@ -312,7 +336,8 @@ section .who {
 /* skills  */
 .skills {
   background-color: rgba(250, 235, 215, 0.678);
-  height: 800px;
+  padding-top: 50px;
+  /* height: 800px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -342,6 +367,7 @@ section .who {
   letter-spacing: 3px;
   word-spacing: 3px;
   color: #111;
+  text-align: justify;
 }
 
 .skill-content p span {
@@ -384,18 +410,23 @@ section .who {
 .skill-content .right .html::before {
   width: 90%;
 }
+
 .skill-content .right .css::before {
   width: 80%;
 }
+
 .skill-content .right .bootstrap::before {
   width: 75%;
 }
+
 .skill-content .right .javascript::before {
   width: 80%;
 }
+
 .skill-content .right .mongodb::before {
   width: 85%;
 }
+
 .skill-content .right .nodejs::before {
   width: 60%;
 }
@@ -404,7 +435,8 @@ section .who {
 .project {
   background-color: #111;
   text-align: center;
-  height: 800px;
+  padding-top: 50px;
+  /* height: 800px; */
   display: flex;
   flex-direction: column;
 }
@@ -441,6 +473,7 @@ section .who {
 /* contact section  */
 
 .contact .home-content {
+  padding-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -503,6 +536,7 @@ section .who {
     margin-bottom: 10px;
     margin-left: 0;
   }
+
   .con span {
     margin-left: 5px;
     font-size: 20px;
@@ -522,6 +556,7 @@ section .who {
 .scroll-up-btn.scroll-none {
   opacity: 1;
 }
+
 svg {
   fill: crimson;
 }
@@ -546,4 +581,44 @@ footer {
 
 .card a {
   font-size: 20px;
+}
+
+.carousel-item img {
+  height: 500px;
+  width: 500px;
+}
+
+.allcontent {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+}
+
+.allcontent details {
+  transition: 0.5s;
+}
+
+.allcontent div {
+  height: 80%;
+  width: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Ubuntu", sans-serif;
+
+  /* align-items: center; */
+}
+
+.contact .container {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+}
+
+.contact .container .row {
+  /* margin-left: 200px; */
 }

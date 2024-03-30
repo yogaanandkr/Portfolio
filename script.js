@@ -7,7 +7,7 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("mouseover", function () {
   const card = this.document.querySelectorAll(".card");
-  card.classList.toggle("shadow");
+  card.classList.toggle(".shadow");
 });
 
 // typing animation script
@@ -86,4 +86,30 @@ carousel.map(a => {
                               </div>
                           </div>
                          `;
+
+  // carousels.innerHTML += `
+  //                       <div class="carousel-item">
+  //                         <img src="${a.img}" alt="...">
+  //                         <div class="carousel-caption d-none d-md-block">
+  //                           <h5>${a.name}</h5>
+  //                         </div>
+  //                       </div>
+  //                       `;
+});
+$(".carousel").owlCarousel('refresh');
+$(".carousel").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    }
+  }
 });
